@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 5;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #ff6600;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 50px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #171717;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url(imagenes/basketball-background-illustration-ai-generative-free-photo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 100px;
+    font-size: 80px;
+    font-weight: 80px;
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 5px solid #ff6600;
+    color: #fff;
+    text-decoration: none;
+    background: #181818;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau{
+    padding: 130px 0;
+    background: #ff6600;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 480px;
+    width: 230px;
+    background: #171717;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, ,3);
+    margin: 50px;
+}
+
+.box-container .box i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #e91e63;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #e91e63;
+}
+
+.box-container .box p {
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.price {
+    background: url(imagenes/180356.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.about {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.box-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box {
+    width: 250px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, ,3);
+    background: #fff;
+    margin: 20px 20px;
+}
+ 
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contenedor a {
+    font-size: 80px;
+}
+
+.instagram {
+    color: #800080;
+}
+ .facebook {
+    color: blue;
+ }
+ .whatsapp {
+    color: green;
+ }
+
+ .contenedor a:hover{
+    transform: scale(1.2);
+
+ }
+
+
+
+
+
+
+.contact {
+    padding: 60px 1;
+    background: #171717;
+}
+
+
+.footer-section{
+    display: flex;
+}
+
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    p{
+        padding: 0 50px;
+    }
+    .title{
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .about {
+        height: 100vh;
+        padding: 50px 0;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+
