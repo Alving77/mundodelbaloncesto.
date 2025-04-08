@@ -1,0 +1,220 @@
+body {
+    display: ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(imagenes/4k-basketball-court-and-sunset-wz50tvexzvd7m182.jpg) no-repeat;
+    background-position: center;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background: #ff6600;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 90px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #171717;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #fff;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.formulario form {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+form .nombredeusuario {
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.nombredeusuario input {
+    width: 100px;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.nombredeusuario label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translate(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.nombredeusuario span::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background: #6c3483;
+    transition: .5s;
+}
+
+.nombredeusuario input:focus ~ label,
+.nombredeusuario input:focus ~ label{
+        top: -5px;
+        color: #6c3483
+}
+
+.nombredeusuario input:focus ~ span::before,
+.nombredeusuario input:focus ~ span::before{
+    width: 100%;
+}
+
+.recordar {
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recordar:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    border: 1px solid;
+    background: #6c3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: beige;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: purple;
+    transition: .5s;
+}
+
+.registrarse {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: white; 
+}
+
+.registrarse a {
+    color: blue;
+    text-decoration: none;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contenedor a {
+    font-size: 80px;
+}
+
+.instagram {
+    color: #800080;
+}
+.facebook {
+    color: blue;
+}
+.whatsapp {
+    color: green;
+}
+
+.contenedor a:hover{
+    transform: scale(1.2);
+
+}
+
+.contact {
+    padding: 60px 1;
+    background: #171717;
+}
+
+
+.footer-section{
+    display: flex;
+}
+
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 40px;
+}
