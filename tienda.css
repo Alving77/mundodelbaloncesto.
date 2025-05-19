@@ -1,0 +1,119 @@
+/* tienda.css - Estilos específicos para tienda.html */
+
+/* Hero Tienda */
+.tienda-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../imagenes/tienda-banner.jpg') center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-light);
+    margin-top: 70px;
+}
+
+/* Productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.producto-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.producto-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.producto-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.producto-card:hover .producto-img img {
+    transform: scale(1.05);
+}
+
+.producto-info {
+    padding: 1.5rem;
+}
+
+.producto-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--nba-blue);
+}
+
+.producto-precio {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--nba-orange);
+    margin-bottom: 1rem;
+}
+
+.producto-precio span {
+    text-decoration: line-through;
+    color: var(--gray-medium);
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+/* Filtros */
+.filtros {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.filtros h3 {
+    margin-bottom: 1rem;
+    color: var(--nba-blue);
+}
+
+.filtros-categoria {
+    margin-bottom: 1.5rem;
+}
+
+.filtros-categoria ul {
+    list-style: none;
+}
+
+.filtros-categoria li {
+    margin-bottom: 0.5rem;
+}
+
+.filtros-categoria a {
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.filtros-categoria a:hover,
+.filtros-categoria a.active {
+    color: var(--nba-orange);
+    font-weight: bold;
+}
+
+/* Responsive Tienda */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
