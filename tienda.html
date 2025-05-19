@@ -1,75 +1,294 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de Zapatillas de Baloncesto</title>
-  <link rel="stylesheet" href="style3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Mundo del Baloncesto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="tienda.css">
 </head>
 <body>
-  <!-- Cabecera -->
-
     <header class="header">
-        <div class="LOGO">
-            <a href="#"><img src="imagenes/Tienda Y historia.jpg" alt="logo" width="67px"></a>
+        <div class="container">
+            <div class="logo">
+                <a href="paginap.html">
+                    <img src="imagenes/Tienda Y historia.jpg" alt="Logo Mundo del Baloncesto" width="70">
+                    <span>Mundo del Baloncesto</span>
+                </a>
+            </div>
+            <nav class="navbar">
+                <a href="paginap.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                <a href="registrate.html" class="nav-link"><i class="fas fa-user-plus"></i> Regístrate</a>
+                <a href="paginap.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a>
+                <a href="tienda.html" class="nav-link active"><i class="fas fa-shopping-bag"></i> Tienda</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-icon" aria-label="Buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn-icon" aria-label="Carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </div>
-        <h1>🏀 Tienda de Zapatillas</h1>
-        <nav>
-          <ul class="nav">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-            <li><a href="#">Contactanos</a></li>
-            <li><a href="registrate.html">Registrate</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-  
+    </header>
 
-<!-- Sección de productos -->
-    <main class="productos">
-        <h2>Zapatillas de Baloncesto</h2>
-        <div class="grid">
-            <!-- Producto 1 -->
-            <div class="producto">
-                <img src="imagenes/zapatillas-nike-ja-1-reverse-scratch-white-black-turbo-green-university-red-0.webp" alt="Zapatilla 1">
-                <h3>Modelo Nike Ja morant 1</h3>
-                <p>Precio: $120</p>
-                <button>Comprar</button>
+    <nav class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li>Tienda</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="tienda-main">
+        <div class="container">
+            <div class="tienda-header">
+                <h1>Tienda de Baloncesto</h1>
+                <p>Los mejores productos para jugadores y aficionados</p>
+                
+                <div class="tienda-controls">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar productos...">
+                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="filter-controls">
+                        <select class="form-select">
+                            <option value="">Ordenar por</option>
+                            <option value="price-asc">Precio: Menor a mayor</option>
+                            <option value="price-desc">Precio: Mayor a menor</option>
+                            <option value="name-asc">Nombre: A-Z</option>
+                            <option value="name-desc">Nombre: Z-A</option>
+                            <option value="newest">Más recientes</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <!-- Producto 2 -->
-            <div class="producto">
-                <img src="imagenes/KD-15.jpg" alt="Zapatilla 2">
-                <h3>Modelo Nike KD 15 ‘Bred’</h3>
-                <p>Precio: $180</p>
-                <button>Comprar</button>
-            </div>
-            <!-- Producto 3 -->
-            <div class="producto">
-                <img src="imagenes/Lamelo ball MB02.webp" alt="Zapatilla 3">
-                <h3>Modelo Puma Lamelo Ball MB02</h3>
-                <p>Precio: $120</p>
-                <button>Comprar</button>
+            
+            <div class="tienda-content">
+                <aside class="tienda-filters">
+                    <div class="filter-section">
+                        <h3>Categorías</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="active">Zapatillas</a></li>
+                            <li><a href="#">Balones</a></li>
+                            <li><a href="#">Camisetas</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Marcas</h3>
+                        <ul class="filter-list">
+                            <li>
+                                <label class="checkbox-container">
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Nike
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Adidas
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Puma
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Jordan
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Precio</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="300" value="150" class="slider">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span>$300</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block">Aplicar filtros</button>
+                </aside>
+                
+                <div class="tienda-products">
+                    <div class="products-grid">
+                        <article class="product-card">
+                            <div class="product-badge">Nuevo</div>
+                            <div class="product-image">
+                                <img src="imagenes/zapatillas-nike-ja-1-reverse-scratch-white-black-turbo-green-university-red-0.webp" alt="Zapatillas Nike Ja Morant 1" loading="lazy">
+                                <div class="product-actions">
+                                    <button class="btn-icon" aria-label="Favorito">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn-icon" aria-label="Vista rápida">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Nike Ja Morant 1</h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="rating-count">(24)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$150</span>
+                                    <span class="original-price">$180</span>
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Añadir al carrito</button>
+                            </div>
+                        </article>
+                        
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/KD-15.jpg" alt="Zapatillas Nike KD 15" loading="lazy">
+                                <div class="product-actions">
+                                    <button class="btn-icon" aria-label="Favorito">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn-icon" aria-label="Vista rápida">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Nike KD 15 'Bred'</h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(18)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$180</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Añadir al carrito</button>
+                            </div>
+                        </article>
+                        
+                        <article class="product-card">
+                            <div class="product-badge">Más vendido</div>
+                            <div class="product-image">
+                                <img src="imagenes/Lamelo ball MB02.webp" alt="Zapatillas Puma Lamelo Ball MB02" loading="lazy">
+                                <div class="product-actions">
+                                    <button class="btn-icon" aria-label="Favorito">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                    <button class="btn-icon" aria-label="Vista rápida">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Puma Lamelo Ball MB02</h3>
+                                <div class="product-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="rating-count">(32)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="current-price">$120</span>
+                                </div>
+                                <button class="btn btn-primary btn-block">Añadir al carrito</button>
+                            </div>
+                        </article>
+                        
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">4</a>
+                        <a href="#" class="page-link">5</a>
+                        <a href="#" class="page-link next">Siguiente <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-  <!-- Pie de página -->
-  <footer class="footer">
-<div class="contenedor">
-  <a href="https://www.instagram.com/alving_mm/profilecard/?igsh=aGwzb2pjeWM1djVw" class="instagram" target="_blank">
-      <i class="fa-brands fa-square-instagram"></i>
-  </a>
-  <a href="https://www.facebook.com/share/15p9KFDXny/?mibextid=LQQJ4d" class="facebook" target="_blank">
-      <i class="fa-brands fa-square-facebook"></i>
-  </a>
-  <a href="HTTP://Wa.me/34621009406" class="whatsapp" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i>
-  </a>
-</div>        
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Mundo del Baloncesto</h3>
+                    <p>Tu fuente definitiva para todo sobre baloncesto: noticias, historia y los mejores productos.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#historia">Leyendas</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle de la Libertad, 32, Madrid</p>
+                    <p><i class="fas fa-phone"></i> +34 621 009 406</p>
+                    <p><i class="fas fa-envelope"></i> info@mundodelbaloncesto.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mundo del Baloncesto. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Licencia CC BY-NC 4.0</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <p>&copy; 2024 Tienda de Zapatillas de Baloncesto. Todos los derechos reservados.</p>
-  </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
